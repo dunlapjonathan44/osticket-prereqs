@@ -36,7 +36,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+In the screenshot, I created a virtual machine in Azure, naming it "os-ticket-vm," using the East US region, with Windows 10 Pro (22H2) and 2 vCPUs. Then I chose a username and password and clicked Review and Create. After it passed validation I clicked create and went to the next step.
 </p>
 <br />
 
