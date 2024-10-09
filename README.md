@@ -53,7 +53,7 @@ In the screenshot, I created a virtual machine in Azure, naming it "os-ticket-vm
    <img src="https://i.imgur.com/QCCascY.png Enable CGI" height="80%" width="80%" alt="Disk Sanitization Steps"/>
   After completing the previous steps, proceed with installing the PHP Manager for IIS. Open the installation file and accept all the default settings by clicking OK. Repeat the process for the rewrite module by running the rewrite_amd64 file, again accepting the default options.
   <img src="https://i.imgur.com/L2KjS5v.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-  
+   <img src="https://i.imgur.com/xT8w8JQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
   
 </p>
 <br />
