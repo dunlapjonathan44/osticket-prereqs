@@ -46,12 +46,15 @@ In the screenshot, I created a virtual machine in Azure, naming it "os-ticket-vm
 </p>
 <p>
 
-  After setting up the Windows 10 VM in Azure, log in using your credentials. It’s recommended to create a Notepad file and save a copy of all credentials used throughout this lab, as there will be several. Inside the VM, open Microsoft Edge and download the osTicket-Installation-Files.zip. Extract the files, and you should see the following.
+  After setting up the Windows 10 VM in Azure, log in using your credentials. It’s recommended to create a Notepad file and save a copy of all credentials, as there will be several. Inside the VM, open Microsoft Edge and download the osTicket-Installation-Files.zip. Extract the files, and you should see the following.
+  
  <img src="https://i.imgur.com/L2KjS5v.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> 
+ 
   Next, we need to enable Internet Information Services (IIS). Start by searching for "Control Panel" in the search bar at the bottom of the screen. Click on Uninstall a Program, then select Turn Windows features on or off. In the window that appears, check the box for Internet Information Services (IIS). Additionally, under World Wide Web Services -> Application Development Features, make sure to enable CGI.
   <img src="https://i.imgur.com/7fg6q8S.png IIS" height="80%" width="80%" alt="Disk Sanitization Steps"/>
    <img src="https://i.imgur.com/QCCascY.png Enable CGI" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-  After completing the previous steps, proceed with installing the PHP Manager for IIS. Open the installation file and accept all the default settings by clicking OK. Repeat the process for the rewrite module by running the rewrite_amd64 file, again accepting the default options.
+   
+   After completing the previous steps, proceed with installing the PHP Manager for IIS. Open the installation file and accept all the default settings by clicking OK. Repeat the process for the rewrite module by running the rewrite_amd64 file, again accepting the default options.
   <img src="https://i.imgur.com/L2KjS5v.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
    <img src="https://i.imgur.com/xT8w8JQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
   
