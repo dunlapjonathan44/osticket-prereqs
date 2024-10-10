@@ -63,7 +63,30 @@ In the screenshot, I created a virtual machine in Azure, naming it "os-ticket-vm
   
   
    <img src="https://i.imgur.com/xT8w8JQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-  
+
+  Next, install the Microsoft Visual C++ Redistributable, accepting all default settings. Then proceed to install MySQL, choosing the **Standard Configuration** option. For simplicity in this lab, set both the username and password to "root". In a real-world scenario, you would use a stronger, more secure password.
+
+ 
+ <img src="https://i.imgur.com/qq3YMw9.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> 
+
+Now, open Internet Information Services (IIS) by typing "IIS" in the search bar, then selecting Run as administrator. In IIS, click on PHP Manager, then choose Register new PHP version. Browse to C:\PHP\php-cgi.exe and select it to complete the registration.
+
+ <img src="https://i.imgur.com/Tym4If9.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> 
+
+ To reload IIS and apply the new PHP version, click Restart on the right-hand side of the IIS window. This ensures the updated PHP configuration is properly loaded.
+
+ <img src="https://i.imgur.com/O89AQk3.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> 
+
+ Extract the **osTicket** zip file, then move the extracted **upload** folder to **C:\inetpub\wwwroot**. Once moved, rename the folder to **osTicket** (make sure the name is exact).
+
+ <img src="https://i.imgur.com/vKt3xLp.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> 
+ <img src="https://i.imgur.com/X6WXZ2p.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> 
+
+ Reload IIS once more. In the left-hand pane, navigate to Sites and click the arrow to expand until you find osTicket. Then, in the right-hand pane, click Browse. You should now see the following.
+
+ 
+
+
 </p>
 <br />
 
@@ -71,6 +94,5 @@ In the screenshot, I created a virtual machine in Azure, naming it "os-ticket-vm
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
 <br />
