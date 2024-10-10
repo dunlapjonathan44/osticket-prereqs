@@ -84,6 +84,45 @@ Now, open Internet Information Services (IIS) by typing "IIS" in the search bar,
 
  Reload IIS once more. In the left-hand pane, navigate to Sites and click the arrow to expand until you find osTicket. Then, in the right-hand pane, click Browse. You should now see the following.
 
+ <img src="https://i.imgur.com/pI2c0qL.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> 
+  
+  <img src="https://i.imgur.com/yEN48h2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> 
+
+ To enable the necessary extensions, navigate to the **osTicket** folder in the left-hand pane and select **PHP Manager** in the center pane. From there, click **Enable or disable an extension** and activate **php_imap.dll**, **php_intl.dll**, and **php_opcache.dll**. After enabling these, refresh the osTicket webpage, and you should see the updated version.
+
+ <img src="https://i.imgur.com/By8Nreb.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> 
+
+ To proceed, rename **C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php** to **C:\inetpub\wwwroot\osTicket\include\ost-config.php**. After that, adjust the file’s permissions by following these steps:
+
+1. Right-click the file and select **Properties**.
+2. Go to the **Security** tab and click on **Advanced**.
+3. Disable inheritance by selecting **Disable inheritance** (choose the option to remove inherited permissions).
+4. Click **Add**, then select **Choose a principal**.
+5. In the box, type **everyone**, click **Check names**, and press **OK**.
+6. Ensure **Full control** is selected, then apply the changes by clicking **OK**.
+
+ <img src="https://i.imgur.com/ZHRtLxm.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/> 
+
+ Return to the osTicket setup in your browser and click **Continue**. Fill in your desired login credentials for the helpdesk system. Keep in mind that the MySQL database name must be **osTicket**, and the username and password should both be set to **root** for simplicity in this setup. 
+
+Before proceeding, go back to the extracted osTicket folder and install **HeidiSQL**. Accept all default installation settings. When prompted to create a new session, click **New** and log into the SQL database using the **root** username and password. Once logged in, right-click **Unnamed** and select **Create new -> Database**, ensuring you name the database **osTicket** exactly.
+
+ <img src="https://i.imgur.com/V8K72aq.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/> 
+  <img src="https://i.imgur.com/ObBKK1A.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+  
+ 
+
+  
+ 
+
+
+
+
+  
+ 
+ 
+
  
 
 
